@@ -1,0 +1,124 @@
+{
+  "声线01": {
+    "label": "上穷碧落下黄泉…",
+    "reference": "voices/声线01/reference.wav",
+    "transcript": "上穷碧落下黄泉，两处茫茫皆不见。",
+    "status": "candidate_voice_style",
+    "reference_start": 0.85,
+    "reference_end": 6.35,
+    "usage": "general_video_narration",
+    "perceptual_review": "awaiting_user_audition"
+  },
+  "声线02": {
+    "label": "忽闻海上有仙山…",
+    "reference": "voices/声线02/reference.wav",
+    "transcript": "忽闻海上有仙山，山在虚无缥缈间。",
+    "status": "candidate_voice_style",
+    "reference_start": 6.8,
+    "reference_end": 12.3,
+    "usage": "general_video_narration",
+    "perceptual_review": "awaiting_user_audition"
+  },
+  "声线03": {
+    "label": "楼阁玲珑五云起…",
+    "reference": "voices/声线03/reference.wav",
+    "transcript": "楼阁玲珑五云起，其中绰约多仙子。中有一人字太真。",
+    "status": "candidate_voice_style",
+    "reference_start": 13.2,
+    "reference_end": 22.0,
+    "usage": "general_video_narration",
+    "perceptual_review": "awaiting_user_audition"
+  },
+  "声线04": {
+    "label": "雪肤花貌参差是…",
+    "reference": "voices/声线04/reference.wav",
+    "transcript": "雪肤花貌参差是，金阙西厢叩玉扃。",
+    "status": "candidate_voice_style",
+    "reference_start": 23.3,
+    "reference_end": 29.75,
+    "usage": "general_video_narration",
+    "perceptual_review": "awaiting_user_audition"
+  },
+  "声线05": {
+    "label": "转教小玉报双成…",
+    "reference": "voices/声线05/reference.wav",
+    "transcript": "转教小玉报双成。闻道汉家天子使，九华帐里梦魂惊。",
+    "status": "candidate_voice_style",
+    "reference_start": 30.4,
+    "reference_end": 39.0,
+    "usage": "general_video_narration",
+    "perceptual_review": "awaiting_user_audition"
+  },
+  "英文01": {
+    "label": "较完整旁白参考 · 12秒",
+    "reference": "voices/英文01/reference.wav",
+    "transcript": "It will gently quake the earth beneath your feet day and night, whispering to you, get up.",
+    "language": "English",
+    "x_vector_only": false,
+    "status": "candidate_reference_clone",
+    "usage": "general_video_narration",
+    "perceptual_review": "awaiting_user_audition"
+  },
+  "英文02": {
+    "label": "短句参考 · 2.7秒",
+    "reference": "voices/英文02/reference.wav",
+    "transcript": "",
+    "language": "English",
+    "x_vector_only": true,
+    "status": "candidate_reference_clone",
+    "usage": "general_video_narration",
+    "perceptual_review": "awaiting_user_audition"
+  },
+  "李羽希": {
+    "reference": "voices/李羽希/reference.wav",
+    "transcript": "",
+    "mode": "finetuned",
+    "model_location": "shared_runtime",
+    "model_path": "models/李羽希",
+    "speaker_id": "xi",
+    "speaker_name": "李羽希",
+    "status": "finetuned_candidate",
+    "identity_mapping": "User now names the original first-project voice 李羽希; uses original model and confirmed source voice.",
+    "voice_quality_confirmed": false,
+    "label": "李羽希"
+  },
+  "夏炎": {
+    "reference": "voices/夏炎/reference.wav",
+    "transcript": "久邦五零幺八，五吨载重，十八米举升。到了位置就能直接干活。",
+    "source": "0916_1L1A2769",
+    "source_start": 0.43,
+    "source_end": 4.83,
+    "automatic_cluster": 2,
+    "speaker_identity_confirmed": true,
+    "status": "user_accepted_reference_clone",
+    "speaker_name": "夏炎",
+    "user_feedback": "speaker_B.wav sounds like 夏炎; preserve this voice",
+    "label": "夏炎"
+  },
+  "王玮琳": {
+    "reference": "voices/王玮琳/reference.wav",
+    "transcript": "",
+    "mode": "finetuned",
+    "model_path": "models/王玮琳",
+    "speaker_id": "wang_weilin",
+    "speaker_name": "王玮琳",
+    "speaker_identity_confirmed": true,
+    "voice_quality_confirmed": false,
+    "status": "finetuned_candidate",
+    "confirmed_source_ranges": {
+      "1014": [
+        3225,
+        3254
+      ],
+      "0916": [
+        2694,
+        2729
+      ],
+      "0929": [
+        2993,
+        3029
+      ]
+    },
+    "label": "王玮琳"
+  }
+}

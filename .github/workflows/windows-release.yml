@@ -1,0 +1,32 @@
+name: Windows installer
+on:
+  push:
+    branches: [main]
+    tags: ['v*']
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Compile installer
+        shell: powershell
+        run: ./build-client.ps1
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Clonedubbing-Windows
+          path: dist/*.exe
+      - name: Publish latest installer
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release view installer-latest *> $null
+          if ($LASTEXITCODE -ne 0) {
+            gh release create installer-latest --title "Windows 客户端安装程序" --notes "服务器客户端：安装后填写配音服务器地址；本安装包不含模型。"
+            if ($LASTEXITCODE -ne 0) { throw 'Release creation failed' }
+          }
+          gh release upload installer-latest dist/*.exe --clobber
+          if ($LASTEXITCODE -ne 0) { throw 'Release upload failed' }

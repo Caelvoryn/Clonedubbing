@@ -1,0 +1,6 @@
+torch==2.8.0
+qwen-tts==0.1.1
+gradio==5.49.0
+numpy
+soundfile
+accelerate
