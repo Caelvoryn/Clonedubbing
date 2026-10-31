@@ -1,0 +1,9 @@
+voices/
+models/
+outputs/
+logs/
+*.exe
+__pycache__/
+*.log
+dist/
+.env
